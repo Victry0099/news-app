@@ -20,8 +20,8 @@ export class NewsItem extends Component {
          </div>
       <img src={!imageUrl?"https://image.cnbcfm.com/api/v1/image/107257542-1686841240624-gettyimages-1244689982-AFP_32NB3E7.jpeg?v=1702333126&w=1920&h=1080":imageUrl} className="card-img-top" alt="..."/>
       <div className="card-body">
-        <h5 className="card-title">{title}...</h5>
-        <p className="card-text">{description}...</p>
+        <h5 className="card-title">{title} </h5>
+        <p className="card-text">{description}</p>
         <p className="card-text"><small className="text-body-secondary"> By {!author?"Unknown":author} on {new Date(date).toGMTString()}</small></p>
         <a href={newsUrl} target='_blank' rel="noreferrer" className="btn btn-primary">Read more</a>
       </div>
