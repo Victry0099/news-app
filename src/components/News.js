@@ -71,7 +71,7 @@ export default class News extends Component {
     return (
       <>
       
-        <h2 className='text-center' style={{margin: '35px 0px'}}>NewsVictry-Top Headlins</h2>
+        <h2 className='text-center' style={{margin: '55px 30px'}}>NewsVictry-Top {this.props.category}</h2>
         <InfiniteScroll
           dataLength={this.state.articles.length}
           next={this.fetchMoreData}
